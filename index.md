@@ -34,7 +34,12 @@ title: "Personal Projects"
   /* BIO SECTION */
   .bio-container {
     margin-bottom: 40px;
-    font-size: 1.05em;
+    font-size: 1.0em;
+    color: #ffffff !important;
+  }
+  
+  .bio-container p {
+    color: #ffffff !important;
   }
   
   .profile-pic {
