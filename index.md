@@ -11,7 +11,6 @@ title: "Personal Projects"
     margin-bottom: 24px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     background-color: #ffffff;
-    border-color: #444c56;
     transition: transform 0.2s ease-in-out;
   }
   .project-card:hover {
@@ -31,9 +30,8 @@ I am very passionate about designing and building robotics, especially drones, a
 
 <div style="clear: both;"></div>
 
-## My Projects
 
-Below is a collection of some of the projects I've worked on.
+<div class="project-card" markdown="1">
 
 **My core technical stacks:**
 - **Robotics & Autonomy:** ROS2, PX4, MAVLink, QGroundControl, Gazebo
@@ -42,7 +40,11 @@ Below is a collection of some of the projects I've worked on.
 - **Fullstack:** Flask, React v19
 - **Mechanical & Design:** Fusion360, 3D printing
 
----
+</div>
+
+## My Projects
+
+Below is a collection of some of the projects I've worked on.
 
 <div class="project-card" markdown="1">
 
