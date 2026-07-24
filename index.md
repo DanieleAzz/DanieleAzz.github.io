@@ -22,45 +22,83 @@ title: "Personal Projects"
   .project-title h2{
     color: #f5f5f5;
   }
-  /* Core Tech Stack Card */
+  
+  /* Core Tech Stack Card - SpaceX / Aerospace Dashboard Inspiration */
   .corestack-card {
     border-radius: 12px;
-    padding: 24px;
+    padding: 32px;
     margin: 32px 0;
-    background: linear-gradient(to right, #f8fcff, #ffffff);
-    color: #203a43;
-    border: 1px solid #e1e4e8;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    /* Deep space / control panel dark gradient */
+    background: linear-gradient(145deg, #0b0c10, #1f2833);
+    color: #ffffff;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   .corestack-card h3 {
     margin-top: 0;
+    margin-bottom: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 12px;
+  }
+  .stack-category {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 16px;
-    color: #203a43;
+    gap: 12px;
   }
-  .corestack-card ul {
-    list-style: none; /* Removes standard bullets */
-    padding-left: 0;
-    margin: 0;
+  .stack-label {
+    color: #8da1b9;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.80em;
+    width: 180px;
+    flex-shrink: 0;
+    padding-top: 8px; 
   }
-  .corestack-card li {
-    padding: 8px 0;
-    border-bottom: 1px solid #eef2f5;
+  .stack-badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1;
   }
-  .corestack-card li:last-child {
-    border-bottom: none;
-  }
-  .corestack-card strong {
-    color: #203a43;
+  /* The "Pill" radius design for each word */
+  .stack-badge {
     display: inline-block;
-    width: 200px; /* Creates a clean, aligned column for the categories */
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 0.85em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+  }
+  .stack-badge:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
 
-  /* Mobile responsiveness for the tech stack alignment */
+  /* Mobile responsiveness */
   @media (max-width: 600px) {
-    .corestack-card strong {
-      display: block;
+    .stack-category {
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+    .stack-label {
       width: 100%;
-      margin-bottom: 4px;
+      padding-top: 0;
     }
   }
 </style>
@@ -75,16 +113,61 @@ I am very passionate about designing and building robotics, especially drones, a
 
 <div style="clear: both;"></div>
 
-<div class="corestack-card" markdown="1">
+<!-- Updated SpaceX Inspired Core Stack -->
+<div class="corestack-card">
+  <h3>My Core Technical Stack</h3>
 
-### My Core Technical Stack
+  <div class="stack-category">
+    <div class="stack-label">Robotics & Autonomy</div>
+    <div class="stack-badges-container">
+      <span class="stack-badge">ROS2</span>
+      <span class="stack-badge">PX4</span>
+      <span class="stack-badge">MAVLink</span>
+      <span class="stack-badge">QGroundControl</span>
+      <span class="stack-badge">Gazebo</span>
+    </div>
+  </div>
 
-- **Robotics & Autonomy:** ROS2, PX4, MAVLink, QGroundControl, Gazebo
-- **Software & Edge ML:** Python, C, OpenCV, PyTorch, TensorFlow, Docker
-- **IoT & Hardware:** NVIDIA Jetson, Raspberry Pi, Arduino, ESP32, nRF, AWS, MQTT
-- **Fullstack:** Flask, React v19
-- **Mechanical & Design:** Fusion360, 3D printing
+  <div class="stack-category">
+    <div class="stack-label">Software & Edge ML</div>
+    <div class="stack-badges-container">
+      <span class="stack-badge">Python</span>
+      <span class="stack-badge">C</span>
+      <span class="stack-badge">OpenCV</span>
+      <span class="stack-badge">PyTorch</span>
+      <span class="stack-badge">TensorFlow</span>
+      <span class="stack-badge">Docker</span>
+    </div>
+  </div>
 
+  <div class="stack-category">
+    <div class="stack-label">IoT & Hardware</div>
+    <div class="stack-badges-container">
+      <span class="stack-badge">NVIDIA Jetson</span>
+      <span class="stack-badge">Raspberry Pi</span>
+      <span class="stack-badge">Arduino</span>
+      <span class="stack-badge">ESP32</span>
+      <span class="stack-badge">nRF</span>
+      <span class="stack-badge">AWS</span>
+      <span class="stack-badge">MQTT</span>
+    </div>
+  </div>
+
+  <div class="stack-category">
+    <div class="stack-label">Fullstack</div>
+    <div class="stack-badges-container">
+      <span class="stack-badge">Flask</span>
+      <span class="stack-badge">React v19</span>
+    </div>
+  </div>
+
+  <div class="stack-category">
+    <div class="stack-label">Mechanical & Design</div>
+    <div class="stack-badges-container">
+      <span class="stack-badge">Fusion360</span>
+      <span class="stack-badge">3D Printing</span>
+    </div>
+  </div>
 </div>
 
 <div class="project-title" markdown="1">
@@ -185,5 +268,3 @@ Horus is an embedded edge-computing platform designed for autonomous field monit
 **Tech Stack:** C++ | Raspberry Pi CM4 | I2C | Linux | MQTT | AWS
 
 </div>
-
-
