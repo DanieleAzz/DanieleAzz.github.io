@@ -3,7 +3,31 @@ layout: default
 title: "Personal Projects"
 ---
 
+<style>
+  .project-card {
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  }
+  /* Optional: Ensures cards look good if a user's system is in dark mode */
+  @media (prefers-color-scheme: dark) {
+    .project-card {
+       background-color: #22272e;
+       border-color: #444c56;
+    }
+  }
+</style>
+
 <img src="assets/images/DSC07320.jpg" style="float: right; width: 180px; border-radius: 50%; margin-left: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
 Hi! I am Daniele, an Italian engineer based in the US.
 
 My experience combines two worlds: my agricultural business and my engineering background. I love solving challenging problems and building solutions for them. My entrepreneurial background gives me a clear vision of some of what a real-world application needs, allowing me to bring forward-thinking solutions to the table, especially in agriculture applications.
@@ -14,9 +38,9 @@ I am very passionate about designing and building robotics, especially drones, a
 
 ## My Projects
 
-Below is a collection of some of the projects I've worked on
+Below is a collection of some of the projects I've worked on.
 
-My core technical stacks:
+**My core technical stacks:**
 - **Robotics & Autonomy:** ROS2, PX4, MAVLink, QGroundControl, Gazebo
 - **Software & Edge ML:** Python, C, OpenCV, PyTorch, TensorFlow, Docker
 - **IoT & Hardware:** NVIDIA Jetson, Raspberry Pi, Arduino, ESP32, nRF, AWS, MQTT
@@ -24,6 +48,9 @@ My core technical stacks:
 - **Mechanical & Design:** Fusion360, 3D printing
 
 ---
+
+<div class="project-card" markdown="1">
+
 ### Crover - Differential PX4 Rover (professional project)
 
 **Overview**
@@ -38,7 +65,9 @@ An autonomous rover platform designed for intelligent field navigation, percepti
 
 **Tech Stack:** C++ | ROS 2 | PX4 | SITL | Gazebo | OpenCV | Python | MAVLink
 
----
+</div>
+
+<div class="project-card" markdown="1">
 
 ### Autonomous Drone for a remote drone docking station (professional project)
 
@@ -54,7 +83,9 @@ An autonomous drone system designed for intelligent aerial navigation and vision
 
 **Tech Stack:** Python | PyMAVLink | Jetson Inference | MQTT | PX4 | SITL | Gazebo
 
----
+</div>
+
+<div class="project-card" markdown="1">
 
 ### Kernel-IoT (personal project)
 
@@ -70,7 +101,9 @@ An autonomous IoT environmental monitoring system designed for remote weather da
 
 **Tech Stack:** C | ESP-IDF | FreeRTOS | Wi-Fi | HTTPS | MQTT
 
----
+</div>
+
+<div class="project-card" markdown="1">
 
 ### SoftFarm (professional project)
 
@@ -84,13 +117,11 @@ A full-stack farm intelligence platform designed to collect, process, and visual
 * Created a cross-platform dashboard experience for viewing maps, charts, and downloadable reports
 * Designed the architecture to be extensible for adding new sensors and data providers with minimal rework
 
-<<<<<<< HEAD
-**Tech Stack**
-Python | Flask | PyMongo | MongoDB | MQTT | React Native / Expo | Leaflet | Chart.js
-=======
 **Tech Stack:** Python | Flask | PyMongo | MongoDB | MQTT | React Native | Leaflet
 
----
+</div>
+
+<div class="project-card" markdown="1">
 
 ### Horus (professional project)
 
@@ -105,4 +136,5 @@ Horus is an embedded edge-computing platform designed for autonomous field monit
 * Developed a Linux-based deployment setup with remote monitoring and synchronization support
 
 **Tech Stack:** C++ | Raspberry Pi CM4 | I2C | Linux | MQTT | AWS
->>>>>>> 23446ea (updated)
+
+</div>
