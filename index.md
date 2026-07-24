@@ -143,18 +143,6 @@ title: "Personal Projects"
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
 
-  /* DISCLAIMER */
-  .disclaimer-box {
-    font-size: 0.85em;
-    color: #8da1b9;
-    background-color: rgba(255, 255, 255, 0.02);
-    padding: 16px 20px;
-    border-left: 3px solid #66fcf1;
-    border-radius: 4px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-
   /* MOBILE RESPONSIVENESS */
   @media (max-width: 600px) {
     .stack-category {
@@ -264,7 +252,17 @@ An autonomous rover platform designed for intelligent field navigation, percepti
 * Used camera input for visual perception, object/row detection, and future inspection-based decision making
 * Supported both simulation and hardware testing workflows, including SITL/Gazebo and field deployment preparation
 
-**Tech Stack:** C++ | ROS 2 | PX4 | SITL | Gazebo | OpenCV | Python | MAVLink
+**Tech Stack:** 
+<div class="stack-badges-container" style="margin-top: 8px;">
+  <span class="stack-badge">C++</span>
+  <span class="stack-badge">ROS 2</span>
+  <span class="stack-badge">PX4</span>
+  <span class="stack-badge">SITL</span>
+  <span class="stack-badge">Gazebo</span>
+  <span class="stack-badge">OpenCV</span>
+  <span class="stack-badge">Python</span>
+  <span class="stack-badge">MAVLink</span>
+</div>
 
 </div>
 
@@ -282,7 +280,16 @@ An autonomous drone system designed for intelligent aerial navigation and vision
 * Precision landing logic using camera feedback and flight-controller messaging
 * Real-time telemetry publishing for battery, GPS, and mission status
 
-**Tech Stack:** Python | PyMAVLink | Jetson Inference | MQTT | PX4 | SITL | Gazebo
+**Tech Stack:** 
+<div class="stack-badges-container" style="margin-top: 8px;">
+  <span class="stack-badge">Python</span>
+  <span class="stack-badge">PyMAVLink</span>
+  <span class="stack-badge">Jetson Inference</span>
+  <span class="stack-badge">MQTT</span>
+  <span class="stack-badge">PX4</span>
+  <span class="stack-badge">SITL</span>
+  <span class="stack-badge">Gazebo</span>
+</div>
 
 </div>
 
@@ -300,7 +307,15 @@ An autonomous IoT environmental monitoring system designed for remote weather da
 * Structured sensor data into JSON payloads with timestamped reporting
 * Developed firmware for real-world deployment scenarios with a focus on reliability and low-power operation
 
-**Tech Stack:** C | ESP-IDF | FreeRTOS | Wi-Fi | HTTPS | MQTT
+**Tech Stack:** 
+<div class="stack-badges-container" style="margin-top: 8px;">
+  <span class="stack-badge">C</span>
+  <span class="stack-badge">ESP-IDF</span>
+  <span class="stack-badge">FreeRTOS</span>
+  <span class="stack-badge">Wi-Fi</span>
+  <span class="stack-badge">HTTPS</span>
+  <span class="stack-badge">MQTT</span>
+</div>
 
 </div>
 
@@ -318,7 +333,16 @@ A full-stack farm intelligence platform designed to collect, process, and visual
 * Created a cross-platform dashboard experience for viewing maps, charts, and downloadable reports
 * Designed the architecture to be extensible for adding new sensors and data providers with minimal rework
 
-**Tech Stack:** Python | Flask | PyMongo | MongoDB | MQTT | React Native | Leaflet
+**Tech Stack:** 
+<div class="stack-badges-container" style="margin-top: 8px;">
+  <span class="stack-badge">Python</span>
+  <span class="stack-badge">Flask</span>
+  <span class="stack-badge">PyMongo</span>
+  <span class="stack-badge">MongoDB</span>
+  <span class="stack-badge">MQTT</span>
+  <span class="stack-badge">React Native</span>
+  <span class="stack-badge">Leaflet</span>
+</div>
 
 </div>
 
@@ -336,10 +360,14 @@ Horus is an embedded edge-computing platform designed for autonomous field monit
 * Built automated logging and file organization workflows for daily data capture
 * Developed a Linux-based deployment setup with remote monitoring and synchronization support
 
-**Tech Stack:** C++ | Raspberry Pi CM4 | I2C | Linux | MQTT | AWS
-
+**Tech Stack:** 
+<div class="stack-badges-container" style="margin-top: 8px;">
+  <span class="stack-badge">C++</span>
+  <span class="stack-badge">Raspberry Pi CM4</span>
+  <span class="stack-badge">I2C</span>
+  <span class="stack-badge">Linux</span>
+  <span class="stack-badge">MQTT</span>
+  <span class="stack-badge">AWS</span>
 </div>
 
-<div class="disclaimer-box">
-  <strong>Disclaimer & Copyright Notice:</strong> All text, code summaries, and photographic images (including profile and project pictures) on this page are the intellectual property of Daniele Azzaro unless otherwise stated. Descriptions of professional projects are provided for portfolio demonstration purposes and may involve intellectual property belonging to their respective institutions or organizations. The content and images on this website may not be downloaded, copied, reproduced, or distributed without explicit written permission.
 </div>
