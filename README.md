@@ -1,7 +1,3 @@
----
-layout: default
-title: "Personal Projects"
----
 
 Hi! I am Daniele, an Italian engineer based in the US.
 
