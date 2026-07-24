@@ -11,19 +11,14 @@ title: "Personal Projects"
     margin-bottom: 24px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     background-color: #ffffff;
+    border-color: #444c56;
     transition: transform 0.2s ease-in-out;
   }
   .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.12);
   }
-  /* Optional: Ensures cards look good if a user's system is in dark mode */
-  @media (prefers-color-scheme: dark) {
-    .project-card {
-       background-color: #22272e;
-       border-color: #444c56;
-    }
-  }
+
 </style>
 
 <img src="assets/images/DSC07320.jpg" style="float: right; width: 180px; border-radius: 50%; margin-left: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
