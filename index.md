@@ -4,6 +4,7 @@ title: "Personal Projects"
 ---
 
 <style>
+  /* Project Cards */
   .project-card {
     border: 1px solid #e1e4e8;
     border-radius: 12px;
@@ -17,7 +18,48 @@ title: "Personal Projects"
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.12);
   }
+  
+  /* Core Tech Stack Card */
+  .corestack-card {
+    border-radius: 12px;
+    padding: 24px;
+    margin: 32px 0;
+    background: linear-gradient(to right, #f8fcff, #ffffff);
+    border: 1px solid #e1e4e8;
+    border-left: 6px solid #203a43; /* Ties into your lunar header */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .corestack-card h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #203a43;
+  }
+  .corestack-card ul {
+    list-style: none; /* Removes standard bullets */
+    padding-left: 0;
+    margin: 0;
+  }
+  .corestack-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eef2f5;
+  }
+  .corestack-card li:last-child {
+    border-bottom: none;
+  }
+  .corestack-card strong {
+    color: #203a43;
+    display: inline-block;
+    width: 200px; /* Creates a clean, aligned column for the categories */
+  }
 
+  /* Mobile responsiveness for the tech stack alignment */
+  @media (max-width: 600px) {
+    .corestack-card strong {
+      display: block;
+      width: 100%;
+      margin-bottom: 4px;
+    }
+  }
 </style>
 
 <img src="assets/images/DSC07320.jpg" style="float: right; width: 180px; border-radius: 50%; margin-left: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
@@ -30,10 +72,10 @@ I am very passionate about designing and building robotics, especially drones, a
 
 <div style="clear: both;"></div>
 
+<div class="corestack-card" markdown="1">
 
-<div class="project-card" markdown="1">
+### My Core Technical Stack
 
-**My core technical stacks:**
 - **Robotics & Autonomy:** ROS2, PX4, MAVLink, QGroundControl, Gazebo
 - **Software & Edge ML:** Python, C, OpenCV, PyTorch, TensorFlow, Docker
 - **IoT & Hardware:** NVIDIA Jetson, Raspberry Pi, Arduino, ESP32, nRF, AWS, MQTT
@@ -134,4 +176,10 @@ Horus is an embedded edge-computing platform designed for autonomous field monit
 
 **Tech Stack:** C++ | Raspberry Pi CM4 | I2C | Linux | MQTT | AWS
 
+</div>
+
+---
+
+<div style="font-size: 0.85em; color: #5c6873; background-color: #f6f8fa; padding: 16px; border-left: 4px solid #d1d5da; border-radius: 4px; margin-top: 40px; margin-bottom: 20px;">
+  <strong>Disclaimer & Copyright Notice:</strong> All text, code summaries, and photographic images (including profile and project pictures) on this page are the intellectual property of Daniele Azzaro unless otherwise stated. Descriptions of professional projects are provided for portfolio demonstration purposes and may involve intellectual property belonging to their respective institutions or organizations. The content and images on this website may not be downloaded, copied, reproduced, or distributed without explicit written permission.
 </div>
