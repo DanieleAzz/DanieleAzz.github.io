@@ -104,7 +104,7 @@ title: "Personal Projects"
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin-bottom: 25px;
     gap: 12px;
   }
   
@@ -332,7 +332,7 @@ An autonomous IoT environmental monitoring system designed for remote weather da
 A full-stack farm intelligence platform designed to collect, process, and visualize agricultural data from multiple field sources. The system integrates a Python-based backend, modular data handlers, and a modern frontend interface to support real-time monitoring, analytics, and operational control for precision agriculture applications.
 
 **Key Features**
-* Built a scalable backend for ingesting data from heterogeneous agricultural sources such as PheNode, LoRa testbeds, and FieldDock systems
+* Built a scalable backend for ingesting data from heterogeneous agricultural sources
 * Implemented modular data processing pipelines for normalization, storage, and retrieval of sensor and field telemetry
 * Developed health monitoring and device-management capabilities for controlling and tracking data handler processes
 * Created a cross-platform dashboard experience for viewing maps, charts, and downloadable reports
