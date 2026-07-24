@@ -4,47 +4,97 @@ title: "Personal Projects"
 ---
 
 <style>
-  /* Project Cards */
-  .project-card {
-    border: 1px solid #e1e4e8;
-    border-radius: 12px;
-    padding: 24px;
-    margin-bottom: 24px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    background-color: #ffffff;
-    color: #203a43;
-    transition: transform 0.2s ease-in-out;
-  }
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
-  }
-  .project-title h2{
-    color: #f5f5f5;
+  /* GLOBAL DARK OVERRIDES (SpaceX / Aerospace Theme) */
+  body, html {
+    background-color: #050608 !important; /* Deep space black */
+    color: #a0aab2 !important; /* Muted gray for readability */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
   }
   
-  /* Core Tech Stack Card - SpaceX / Aerospace Dashboard Inspiration */
-  .corestack-card {
+  #main_content_wrap {
+    background: transparent !important;
+    border: none !important;
+  }
+  
+  #main_content {
+    background: transparent !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  p, li {
+    color: #b0bac3;
+    line-height: 1.6;
+  }
+
+  /* BIO SECTION */
+  .bio-container {
+    margin-bottom: 40px;
+    font-size: 1.05em;
+  }
+  
+  .profile-pic {
+    float: right; 
+    width: 180px; 
+    border-radius: 50%; 
+    margin-left: 30px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    border: 2px solid rgba(255,255,255,0.1);
+  }
+
+  /* PROJECT CARDS */
+  .project-card {
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 32px;
-    margin: 32px 0;
-    /* Deep space / control panel dark gradient */
-    background: linear-gradient(145deg, #0b0c10, #1f2833);
-    color: #ffffff;
-    border: 1px solid #333;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  .corestack-card h3 {
-    margin-top: 0;
     margin-bottom: 24px;
+    background: linear-gradient(145deg, #0e1116, #151921);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(102, 252, 241, 0.06); /* Subtle cyan thruster glow */
+    border-color: rgba(102, 252, 241, 0.3);
+  }
+
+  .project-card h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
     color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1.2em;
+    font-size: 1.25em;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     padding-bottom: 12px;
   }
+
+  .project-card strong {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+  }
+
+  /* CORE TECH STACK CARD */
+  .corestack-card {
+    border-radius: 12px;
+    padding: 32px;
+    margin: 40px 0;
+    background: linear-gradient(145deg, #0a0c10, #161b22);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  }
+  
+  .corestack-card h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 12px;
+  }
+  
   .stack-category {
     display: flex;
     align-items: flex-start;
@@ -52,8 +102,9 @@ title: "Personal Projects"
     margin-bottom: 16px;
     gap: 12px;
   }
+  
   .stack-label {
-    color: #8da1b9;
+    color: #66fcf1; /* Aerospace interface cyan */
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -62,18 +113,19 @@ title: "Personal Projects"
     flex-shrink: 0;
     padding-top: 8px; 
   }
+  
   .stack-badges-container {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     flex: 1;
   }
-  /* The "Pill" radius design for each word */
+  
   .stack-badge {
     display: inline-block;
     padding: 6px 14px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.15);
     font-size: 0.85em;
     font-weight: 500;
@@ -82,14 +134,28 @@ title: "Personal Projects"
     backdrop-filter: blur(4px);
     transition: all 0.2s ease;
   }
+  
   .stack-badge:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(102, 252, 241, 0.1);
+    border-color: #66fcf1;
+    color: #66fcf1;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
 
-  /* Mobile responsiveness */
+  /* DISCLAIMER */
+  .disclaimer-box {
+    font-size: 0.85em;
+    color: #8da1b9;
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 16px 20px;
+    border-left: 3px solid #66fcf1;
+    border-radius: 4px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  /* MOBILE RESPONSIVENESS */
   @media (max-width: 600px) {
     .stack-category {
       flex-direction: column;
@@ -100,20 +166,26 @@ title: "Personal Projects"
       width: 100%;
       padding-top: 0;
     }
+    .profile-pic {
+      float: none;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
   }
 </style>
 
-<img src="assets/images/DSC07320.jpg" style="float: right; width: 180px; border-radius: 50%; margin-left: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<div class="bio-container">
+  <img src="assets/images/DSC07320.jpg" alt="Daniele Azzaro" class="profile-pic">
 
-Hi! I am Daniele, an Italian engineer based in the US.
+  <p>Hi! I am Daniele, an Italian engineer based in the US.</p>
 
-My experience combines two worlds: my agricultural business and my engineering background. I love solving challenging problems and building solutions for them. My entrepreneurial background gives me a clear vision of some of what a real-world application needs, allowing me to bring forward-thinking solutions to the table, especially in agriculture applications.
+  <p>My experience combines two worlds: my agricultural business and my engineering background. I love solving challenging problems and building solutions for them. My entrepreneurial background gives me a clear vision of some of what a real-world application needs, allowing me to bring forward-thinking solutions to the table, especially in agriculture applications.</p>
 
-I am very passionate about designing and building robotics, especially drones, and IoT systems, combining hands-on hardware and software development to deploy end-to-end autonomous systems.
+  <p>I am very passionate about designing and building robotics, especially drones, and IoT systems, combining hands-on hardware and software development to deploy end-to-end autonomous systems.</p>
+</div>
 
 <div style="clear: both;"></div>
 
-<!-- Updated SpaceX Inspired Core Stack -->
 <div class="corestack-card">
   <h3>My Core Technical Stack</h3>
 
@@ -177,7 +249,6 @@ I am very passionate about designing and building robotics, especially drones, a
 Below is a collection of some of the projects I've worked on.
 
 </div>
-
 
 <div class="project-card" markdown="1">
 
@@ -267,4 +338,8 @@ Horus is an embedded edge-computing platform designed for autonomous field monit
 
 **Tech Stack:** C++ | Raspberry Pi CM4 | I2C | Linux | MQTT | AWS
 
+</div>
+
+<div class="disclaimer-box">
+  <strong>Disclaimer & Copyright Notice:</strong> All text, code summaries, and photographic images (including profile and project pictures) on this page are the intellectual property of Daniele Azzaro unless otherwise stated. Descriptions of professional projects are provided for portfolio demonstration purposes and may involve intellectual property belonging to their respective institutions or organizations. The content and images on this website may not be downloaded, copied, reproduced, or distributed without explicit written permission.
 </div>
