@@ -1,9 +1,16 @@
+---
+layout: default
+title: "Personal Projects"
+---
 
+<img src="assets/images/DSC07320.jpg" style="float: right; width: 180px; border-radius: 50%; margin-left: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 Hi! I am Daniele, an Italian engineer based in the US.
 
 My experience combines two worlds: my agricultural business and my engineering background. I love solving challenging problems and building solutions for them. My entrepreneurial background gives me a clear vision of some of what a real-world application needs, allowing me to bring forward-thinking solutions to the table, especially in agriculture applications.
 
 I am very passionate about designing and building robotics, especially drones, and IoT systems, combining hands-on hardware and software development to deploy end-to-end autonomous systems.
+
+<div style="clear: both;"></div>
 
 ## My Projects
 
