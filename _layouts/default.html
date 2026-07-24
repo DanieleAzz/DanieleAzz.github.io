@@ -9,7 +9,7 @@
 
     <!-- Custom CSS for Dark Lunar Header -->
     <style>
-      #header_wrap {
+      #main_content_wrap {
         /* A sleek, deep space/lunar gradient */
         background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%) !important;
         border-bottom: 1px solid #0f2027;
@@ -29,7 +29,7 @@
 
   <body>
 
-    <!-- HEADER -->
+    <!-- HEADER
     <div id="header_wrap" class="outer">
         <header class="inner">
           {% if site.github.is_project_page %}
@@ -46,7 +46,7 @@
             </section>
           {% endif %}
         </header>
-    </div>
+    </div> -->
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
@@ -56,11 +56,12 @@
     </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
+    <div id="footer_wrap" class="outer" style="background: #0f2027;">
       <footer class="inner">
         {% if site.github.is_project_page %}
         <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
+        <p><strong>Disclaimer & Copyright Notice:</strong> All text, code summaries, and photographic images (including profile and project pictures) on this page are the intellectual property of Daniele Azzaro unless otherwise stated. Descriptions of professional projects are provided for portfolio demonstration purposes and may involve intellectual property belonging to their respective institutions or organizations. The content and images on this website may not be downloaded, copied, reproduced, or distributed without explicit written permission.</p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>

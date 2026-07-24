@@ -178,8 +178,4 @@ Horus is an embedded edge-computing platform designed for autonomous field monit
 
 </div>
 
----
 
-<div style="font-size: 0.85em; color: #5c6873; background-color: #f6f8fa; padding: 16px; border-left: 4px solid #d1d5da; border-radius: 4px; margin-top: 40px; margin-bottom: 20px;">
-  <strong>Disclaimer & Copyright Notice:</strong> All text, code summaries, and photographic images (including profile and project pictures) on this page are the intellectual property of Daniele Azzaro unless otherwise stated. Descriptions of professional projects are provided for portfolio demonstration purposes and may involve intellectual property belonging to their respective institutions or organizations. The content and images on this website may not be downloaded, copied, reproduced, or distributed without explicit written permission.
-</div>
