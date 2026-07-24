@@ -12,21 +12,24 @@ title: "Personal Projects"
     margin-bottom: 24px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     background-color: #ffffff;
+    color: #203a43;
     transition: transform 0.2s ease-in-out;
   }
   .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.12);
   }
-  
+  .project-title h2{
+    color: #f5f5f5;
+  }
   /* Core Tech Stack Card */
   .corestack-card {
     border-radius: 12px;
     padding: 24px;
     margin: 32px 0;
     background: linear-gradient(to right, #f8fcff, #ffffff);
+    color: #203a43;
     border: 1px solid #e1e4e8;
-    border-left: 6px solid #203a43; /* Ties into your lunar header */
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   }
   .corestack-card h3 {
@@ -84,9 +87,14 @@ I am very passionate about designing and building robotics, especially drones, a
 
 </div>
 
+<div class="project-title" markdown="1">
+
 ## My Projects
 
 Below is a collection of some of the projects I've worked on.
+
+</div>
+
 
 <div class="project-card" markdown="1">
 
